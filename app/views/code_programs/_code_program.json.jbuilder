@@ -16,3 +16,4 @@ json.city code_program.city
 json.state code_program.state
 json.zip code_program.zip
 json.when_founded code_program.when_founded
+json.keywords code_program.keywords
