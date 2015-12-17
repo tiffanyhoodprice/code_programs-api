@@ -1,0 +1,1 @@
+json.array! @code_programs, partial: 'code_program', as: :code_program
