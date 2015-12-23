@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151215190412) do
+ActiveRecord::Schema.define(version: 20151223043327) do
 
   create_table "code_programs", force: :cascade do |t|
     t.text     "keywords",            limit: 65535
@@ -34,6 +34,13 @@ ActiveRecord::Schema.define(version: 20151215190412) do
     t.datetime "created_at",                        null: false
     t.datetime "updated_at",                        null: false
     t.text     "languages_courses",   limit: 65535
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "email",      limit: 255
+    t.string   "api_key",    limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
