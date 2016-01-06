@@ -1,0 +1,23 @@
+<div ng-app="app">
+  <div ng-controller="codeProgramsCtrl" ng-init="setup()">
+    
+    <p>Org Name: <input ng-model="newCodeProgram.organization_name">
+    <p>Website url: <input ng-model="newCodeProgram.website">
+    <p>Description: <input ng-model="newCodeProgram.mission_description">
+    <p>Population focus: <input ng-model="newCodeProgram.population_focus">
+    <p>Time commitment: <input ng-model="newCodeProgram.time_commitment">
+    <p>Program Cost: <input ng-model="newCodeProgram.cost">
+    <p>Languages: <input ng-model="newCodeProgram.languages_courses">
+    <p>Locations (city, state): <input ng-model="newCodeProgram.locations">
+    <p>Contact Person Name: <input ng-model="newCodeProgram.leadership_contact">
+    <p>Contact Person Title: <input ng-model="newCodeProgram.title">
+    <p>Contact Person Email: <input ng-model="newCodeProgram.email">
+    <p>Phone Number: <input ng-model="newCodeProgram.phone_number">
+    <p>Address: <input ng-model="newCodeProgram.address">
+    <p>City: <input ng-model="newCodeProgram.city">
+    <p>State: <input ng-model="newCodeProgram.state">
+    <p>Zip: <input ng-model="newCodeProgram.zip">
+    <p>Year Founded: <input ng-model="newCodeProgram.when_founded">
+    <button ng-click="addCodeProgram(newCodeProgram)">Add Program</button>
+  </div>
+</div>

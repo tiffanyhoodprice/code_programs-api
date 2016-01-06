@@ -38,6 +38,9 @@ def index
       when_founded: params[:when_founded]
     )
     render :show
+    # render json: @code_program
+  # else
+  #   render json: {errors: @code_program.errors.full_messages}, status: 422
   end
 
 end
