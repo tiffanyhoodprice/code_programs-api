@@ -20,6 +20,16 @@
           $scope.errorMessages = error.data.errors
         });
       }
+
+      $scope.toggleOrder = function(attribute) {
+        if(attribute === $scope.orderAttribute) {
+          $scope.direction = !$scope.direction;
+        } else {
+          $scope.direction = false;
+        }
+        $scope.orderAttribute = attribute;
+      }
+
     window.$scope = $scope;
     });
   

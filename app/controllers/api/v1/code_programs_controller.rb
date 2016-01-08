@@ -16,6 +16,11 @@ def index
     # render json: @code_programs
   end
 
+  # def search
+  #   @code_programs = CodeProgram.where("organization_name like ?", "%#{params[:organization_name]}%")
+  #   render :index
+  # end
+
   def create
     @code_program = CodeProgram.create(
       keywords: params[:keywords], 
@@ -37,10 +42,10 @@ def index
       phone_number: params[:phone_number], 
       when_founded: params[:when_founded]
     )
-    render :show
-    # render json: @code_program
-  # else
-  #   render json: {errors: @code_program.errors.full_messages}, status: 422
+    # render :show
+    render json: @code_program
+  else
+    render json: {errors: @code_program.errors.full_messages}, status: 422
   end
 
 end
