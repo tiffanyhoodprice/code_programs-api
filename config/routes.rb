@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   
   namespace :api do
     namespace :v1 do
+      post '/code_programs/search', to: 'code_programs#search'
       resources :code_programs
     end
   end

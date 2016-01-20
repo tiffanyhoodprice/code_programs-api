@@ -1,6 +1,5 @@
 <div ng-app="app">
   <div ng-controller="codeProgramsCtrl" ng-init="setup()">
-    
     Search by location: <input ng-model="locationFilter" list="location" class="animated">
     <datalist id="location">
     <option ng-repeat="codeProgram in codePrograms">{{codeProgram.locations}}</option>
