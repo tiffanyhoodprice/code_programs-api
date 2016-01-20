@@ -5,10 +5,10 @@
     <option ng-repeat="codeProgram in codePrograms">{{codeProgram.locations}}</option>
     </datalist>
 
-    Search by name: <input ng-model="nameFilter" list="names">
+    <!-- Search by name: <input ng-model="nameFilter" list="names">
     <datalist id="names">
     <option ng-repeat="codeProgram in codePrograms">{{codeProgram.organization_name}}</option>
-    </datalist>
+    </datalist> -->
 
     <table>
       <tr>
@@ -24,7 +24,7 @@
       </tr>
     </table>
 
-     <div>Add Program/Resource
+<!--      <div>Add Program/Resource
       <ul>
         <li class="error-messages" ng-repeat="errorMessage in errorMessages">{{errorMessage}}</li>
       </ul>
@@ -47,6 +47,6 @@
       <p>Zip: <input ng-model="newCodeProgram.zip">
       <p>Year Founded: <input ng-model="newCodeProgram.when_founded">
       <button ng-click="addCodeProgram(newCodeProgram)">Add Program</button>
-    </div>
+    </div> -->
   </div>
 </div>

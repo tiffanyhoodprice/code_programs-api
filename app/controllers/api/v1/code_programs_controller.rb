@@ -33,6 +33,10 @@ class Api::V1::CodeProgramsController < ApplicationController
     render :index
   end
 
+  def new
+    @code_program = CodeProgram.new
+  end
+
   def create
     @code_program = CodeProgram.new(
       keywords: params[:keywords], 
