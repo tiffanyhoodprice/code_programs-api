@@ -12,12 +12,13 @@ class Api::V1::CodeProgramsController < ApplicationController
     # render json: @code_program
   end
 
-  def destroy
-    @code_program = CodeProgram.find(params[:id])
-    p "Inside API destroy action"
-    @code_program.destroy
-    render :index
-  end
+# 12/4 Temporarily deleting to prohibit deletions from live site - TP
+  # def destroy
+  #   @code_program = CodeProgram.find(params[:id])
+  #   p "Inside API destroy action"
+  #   @code_program.destroy
+  #   render :index
+  # end
 
   # def search
   #   @code_programs = CodeProgram.search(params[:search])
