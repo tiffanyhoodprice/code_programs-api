@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['CLEARDB_DATABASE_URL'] %>
   database: code_programs-api_production
   username: code_programs-api
   password: <%= ENV['CODE_PROGRAMS-API_DATABASE_PASSWORD'] %>
